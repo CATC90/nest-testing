@@ -8,7 +8,7 @@ export interface createCatDto {
   breed: string;
 }
 
-export interface Cat extends Document {
+export class Cat extends Document {
   readonly name: string;
   readonly age: number;
   readonly breed: string;

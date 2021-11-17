@@ -6,7 +6,7 @@ import { Cat, createCatDto } from 'src/cats/schemas/cat.schema';
 export class CatsService {
   constructor(
     @Inject('CAT_MODEL')
-    private catModel: Model<Cat>,
+    private readonly catModel: typeof Model,
   ) {}
 
   async create(createCatDto: createCatDto): Promise<Cat> {

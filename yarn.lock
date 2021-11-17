@@ -635,6 +635,11 @@
     tslib "2.3.1"
     uuid "8.3.2"
 
+"@nestjs/mongoose@^9.0.1":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@nestjs/mongoose/-/mongoose-9.0.1.tgz#a07f5440318d277579ed8ab2b4dec7eb5cc13e4e"
+  integrity sha512-TITKt5Q+k7PU5OmRcvQqqTdjBpAToFkP6LoLZ4n2DGm4jHh9iqX3Rkm8e7Ytwb5iWqGAAn1txcYJP8XO/H9Ixg==
+
 "@nestjs/platform-express@^8.0.0":
   version "8.2.1"
   resolved "https://registry.yarnpkg.com/@nestjs/platform-express/-/platform-express-8.2.1.tgz#e9d6bbc6a07487a45fecc9711019c56962bf4b1d"
@@ -657,7 +662,7 @@
     jsonc-parser "3.0.0"
     pluralize "8.0.0"
 
-"@nestjs/testing@^8.0.0":
+"@nestjs/testing@^8.2.1":
   version "8.2.1"
   resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-8.2.1.tgz#405a56ddcfd6eee13a03952f3ef0806867f834f6"
   integrity sha512-nUxsFVwUdagSQSWhnyqZVOeq32Lzzy1bOcJ0Ot0E12pcg8hZenKTQAwLcjbpFIVKKxYgl9P340csSjPN80uI8A==
