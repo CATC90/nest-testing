@@ -3,6 +3,7 @@ import {
   Controller,
   Delete,
   Get,
+  NotFoundException,
   Param,
   Patch,
   Post,
@@ -25,8 +26,12 @@ export class CatsController {
   }
 
   @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.usersService.findOne(id);
+  async findOne(@Param('id') id: string) {
+    const cat = await this.usersService.findOne(id);
+    if (!cat) {
+      throw new NotFoundException(`user with id [${id}] not found`);
+    }
+    return cat;
   }
 
   @Patch(':id')
